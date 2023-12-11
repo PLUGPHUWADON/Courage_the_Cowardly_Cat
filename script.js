@@ -27,6 +27,7 @@ let tsuperman;
 
 let audiobackground = new Audio("audio2.mp3");
 audiobackground.loop = true;
+audiobackground.autoplay = true;
 audiobackground.volume = 0.1
 audiobackground.play();
 
