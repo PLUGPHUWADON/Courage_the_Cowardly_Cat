@@ -32,6 +32,15 @@ h2{
     z-index: 10px;
 }
 
+.controlaudio{
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    top: 35px;
+    font-weight: bold;
+    right: 200px;
+}
+
 .boxroad{
     position: absolute;
     bottom: 0;

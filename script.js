@@ -7,6 +7,8 @@ let restart = document.querySelector(".restart");
 let catrun = document.querySelector(".catrun");
 let displayfilecat = document.querySelector(".heart > p");
 let superman = document.querySelector(".superman");
+let controlaudio = document.querySelector(".controlaudio");
+let playaudio = document.querySelector(".playaudio");
 
 let Top = -30;
 let checkclick = 1;
@@ -25,11 +27,15 @@ let tscore;
 let tcatrun;
 let tsuperman;
 
-let audiobackground = new Audio("audio2.mp3");
-audiobackground.loop = true;
-audiobackground.autoplay = true;
-audiobackground.volume = 0.1
-audiobackground.play();
+controlaudio.addEventListener("click",() => {
+    if (playaudio.paused) {
+        playaudio.volume = 0.2;
+        playaudio.play();
+    }
+    else{
+        playaudio.pause();
+    }
+});
 
 btn.addEventListener("click",() => {
     let audio = new Audio("audio1.mp3");
