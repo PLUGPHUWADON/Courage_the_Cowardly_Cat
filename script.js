@@ -114,6 +114,11 @@ function MoveObject() {
                     playerpo.bottom > objectpo.top &&
                     playerpo.left < objectpo.right &&
                     playerpo.right > objectpo.left) {
+                        for (let i = 0 ; i < objectt.length ; i++) {
+                            objectt[0].remove();
+                            arrpo.splice(0,1);
+                            objectt = document.querySelectorAll(".object");
+                        }
                         clearInterval(tmoveobject);
                         clearInterval(tscore);
                         clearInterval(cleateobject);
